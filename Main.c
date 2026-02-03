@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main () {
-    printf("This is calculater");
+    printf("This is relese branch");
 }
