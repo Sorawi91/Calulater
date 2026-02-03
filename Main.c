@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int Persen(int a, int b) {
+int Persen(int a, int b) { //หารเอาเศษ
     return (b != 0) ? a % b : 0;
 }
 
@@ -48,5 +48,5 @@ int main() {
     }
 
     printf("Answer: %d\n", first);
-    return 0;
-}
+    return 0; 
+} 
