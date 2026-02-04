@@ -4,23 +4,23 @@ int Persen(int a, int b) { //หารเอาเศษ
     return (b != 0) ? a % b : 0;
 }
 
-int divide(int a, int b) {
+int divide(int a, int b) { //หาร
     return (b != 0) ? a / b : 0;
 }
 
-int multiply(int a, int b) {
+int multiply(int a, int b) { //คูณ
     return a * b;
 }
 
-int minus(int a, int b) {
+int minus(int a, int b) { //ลบ
     return a - b;
 }
 
-int plus(int a, int b) {
+int plus(int a, int b) { //บวก
     return a + b;
 }
 
-int calculate(int a, char op, int b) {
+int calculate(int a, char op, int b) { //ประกาศตัวแปรไว้รับค่าตัวเลขและตัวอักษรพิเศษ
     int total = a;
 
 //    if (op == '+') total = plus(a, b);
@@ -37,16 +37,16 @@ int main() {
     int first, next;
     char op;
 
-    if (scanf("%d", &first) != 1) return 0;
+    if (scanf("%d", &first) != 1) return 0; // รับค่าตัวเลขตัวแรก
 
     while (1) {
         scanf(" %c", &op);
-        if (op == '=') break;
+        if (op == '=') break; //ถ้าตัวอักษรพิเศษเป็น = ให้หยุดการทำงาน
 
-        scanf("%d", &next);
-        first = calculate(first, op, next);
+        scanf("%d", &next); //รับค่าตัวเลขตัวถัดไป
+        first = calculate(first, op, next); //เรียกใช้ฟังก์ชันคำนวณ
     }
 
-    printf("Answer: %d\n", first);
+    printf("Answer: %d\n", first); //แสดงผลลัพธ์สุดท้าย
     return 0; 
 } 
