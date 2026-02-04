@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int Persen(int a, int b) { //หารเอาเศษ
-    return (b != 0) ? a % b : 2;
+    return (b != 0) ? a % b : 1;
 }
 
 int divide(int a, int b) { //หาร
