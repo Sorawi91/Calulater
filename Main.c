@@ -25,9 +25,9 @@ int calculate(int a, char op, int b) { //ประกาศตัวแปรไ
 
    if (op == '+') total = plus(a, b);
       else if (op == '-') total = minus(a, b);
-      else if (op == '*') total = multiply(a, b);
-      else if (op == '/') total = divide(a, b);
-      else if (op == '%') total = Persen(a, b);
+    //   else if (op == '*') total = multiply(a, b);
+    //   else if (op == '/') total = divide(a, b);
+    //   else if (op == '%') total = Persen(a, b);
 
     printf("Process: %d %c %d = %d\n", a, op, b, total);
     return total;
